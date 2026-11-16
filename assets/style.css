@@ -1,0 +1,67 @@
+body {
+    background-color: #000000;
+    padding: 10px 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.red_btn {
+    background-color: #ff0000;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.white_border_btn {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    border: 1px solid white;
+}
+
+/* HEADER */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_text {
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.trial_lesson {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* БАЛЕТ КОТОРЫЙ ДЕЛАЕТ СИЛЬНЕЕ */
