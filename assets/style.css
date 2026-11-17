@@ -5,6 +5,7 @@
     --background-color: #111111;
     --grey-color: #9AA3A8;
     --hr-color: #363A3D;
+    --block-color: #1E1E1E;
 }
 
 @font-face {
@@ -90,7 +91,6 @@ hr {
     background-color: var(--red-color);
     border: none;
     padding: 15px;
-    border-radius: 8px;
     color: var(--white-color);
 }
 
@@ -101,7 +101,6 @@ hr {
 .white_border_btn {
     background-color: var(--black-color);
     padding: 15px;
-    border-radius: 8px;
     color: var(--white-color);
     border: 1px solid var(--white-color);
 }
@@ -143,6 +142,7 @@ hr {
     background-size: 100%;
     min-height: 720px;
     background-image: url(./images/main_man.svg);
+    background-repeat: no-repeat;
 }
 
 .main_page_text {
@@ -198,4 +198,24 @@ hr {
 }
 hr {
     border-color: var(--hr-color);
+}
+
+.about_studio {
+    padding-top: 50px;
+}
+
+.full_block_about_studio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block_about_studio{
+    background-color: var(--block-color);
+    min-width: 412px;
+    padding: 20px 30px;
+}
+
+.red_number {
+    color: var(--red-color);
 }
