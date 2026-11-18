@@ -155,9 +155,45 @@ hr {
     justify-content: space-between;
 }
 
+.hero_label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Сама красная полоска */
+.red_line {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--red-color);
+    flex-shrink: 0;
+}
+
+.hero_label p {
+    color: var(--grey-color);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 .main_page_name {
     color: var(--grey-color);
-    padding-top: 40px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.full_text_about_studio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 36px;
 }
 
 .main_page_btn {
@@ -169,12 +205,27 @@ hr {
 .studio_data {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 100px;
+    margin-top: 20px;
 }
 
 .number_data_studio {
     display: flex;
     flex-direction: column;
+    gap: 8px; 
+}
+
+.number_data_studio h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.number_data_studio .main_page_name.stats_label {
+    padding-top: 0;
+    margin: 0;
+    font-size: 14px;
 }
 
 .zagolovok {
@@ -183,6 +234,14 @@ hr {
     margin: 0px;
     font-size: 76px;
 }
+
+.mini-zagolovok {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-size: 48px;
+}
+
 .red_text {
     margin: 0px;
     font-size: 76px;
@@ -193,7 +252,7 @@ hr {
 }
 
 .hr_main {
-    width: 55%;
+    width: 70%;
     margin: 0px;
     padding-top: 40px;
 }
@@ -206,19 +265,41 @@ hr {
 }
 
 .full_block_about_studio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.block_about_studio h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.block_about_studio .main_page_name {
+    padding-top: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.block_about_studio .red_number {
+    margin: 0; /* Убираем отступы у цифры */
+    font-size: 14px;
 }
 
 .block_about_studio{
     background-color: var(--block-color);
-    min-width: 412px;
-    padding: 20px 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
 }
 
 .red_number {
     color: var(--red-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
 }
 
 .subtitle_direction {
@@ -226,36 +307,76 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .block_direction {
     background-color: var(--block-color);
-    min-width: 870px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.block_direction > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .full_blocks_direction {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     padding-bottom: 50px;
 }
 
 .double_block_direction {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .podrobnee {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.podrobnee p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.arrow_icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.podrobnee:hover .arrow_icon {
+    transform: rotate(90deg);
 }
 
 .text_block_direction {
-    padding: 0px 20px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.text_block_direction h2 {
+    margin: 0 0 15px 0;
+}
+
+.text_block_direction .main_page_name {
+    padding-top: 0; /* Убираем глобальный отступ 40px */
+    margin: 0 0 30px 0;
+    flex-grow: 1; /* Прижимает "Подробнее" к низу карточки */
+    line-height: 1.5;
 }
 
 thead {
@@ -404,7 +525,7 @@ th,td {
 
 /* БЛОК ПРЕПОДАВАТЕЛЕЙ */
 .teachers {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
