@@ -307,6 +307,7 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 36px;
 }
 
 .block_direction {
@@ -533,7 +534,6 @@ th,td {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top: 50px;
 }
 
 .teacher-card {
@@ -600,7 +600,6 @@ th,td {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top: 50px;
 }
 
 .pricing_card {
@@ -693,4 +692,366 @@ th,td {
 .footer_right {
     color: var(--grey-color);
     font-size: 14px;
+}
+
+/* для адаптива штуки */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+/* планшет */
+
+@media (max-width: 834px) {
+    header,
+    main {
+        padding: 0 40px;
+    }
+
+    .head {
+        gap: 30px;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logo_text_img {
+        max-height: 30px;
+        width: auto;
+    }
+
+    .navigation {
+        gap: 40px;
+    }
+
+    .main_page {
+        flex-direction: column;
+        min-height: auto;
+        background-image: none;
+    }
+
+    .main_page_text {
+        padding-left: 0;
+        flex: none;
+        width: 100%;
+        order: 1;
+    }
+
+    .hero_label {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .main_page_btn {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .main_page_btn .btn-cta,
+    .main_page_btn .btn-cta-white {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .studio_data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .studio_data .number_data_studio {
+        text-align: center;
+        align-items: center;
+    }
+
+    .number_data_studio {
+        width: 100%;
+    }
+
+    .full_block_about_studio {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .full_blocks_direction {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .pricing_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .pricing_card {
+        padding: 30px 20px;
+    }
+
+    .teachers_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .main_footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer_left,
+    .footer_center,
+    .footer_right {
+        text-align: center;
+    }
+}
+
+/* мобилка */
+
+@media (max-width: 375px) {
+    header,
+    main {
+        padding: 0 20px;
+    }
+
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .trial_lesson {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        order: 2;
+        margin-left: auto;
+    }
+
+    .main_page {
+        flex-direction: column;
+        min-height: auto;
+        background-image: none;
+    }
+
+    .main_page_text {
+        padding-left: 0;
+        flex: none;
+        width: 100%;
+        order: 1;
+    }
+
+    .main_page_title .zagolovok {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .red_text {
+        font-size: 48px;
+    }
+
+    .mini-zagolovok {
+        font-size: 32px;
+    }
+
+    .main_page_title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .full_text_about_studio p,
+    .subtitle_direction p {
+        display: none;
+    }
+
+    .main_page_btn {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .main_page_btn .btn-cta,
+    .main_page_btn .btn-cta-white {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .studio_data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .number_data_studio h1 {
+        font-size: 32px;
+    }
+
+    .full_block_about_studio {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .full_blocks_direction {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .teachers_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    /* короче таблица расписания, но это карточки уже */
+    .table-wrapper {
+        overflow-x: visible;
+    }
+
+    .schedule-table,
+    .schedule-table thead,
+    .schedule-table tbody,
+    .schedule-table tr,
+    .schedule-table th,
+    .schedule-table td {
+        display: block;
+    }
+
+    .schedule-table thead {
+        display: none;
+    }
+
+    .schedule-table tbody tr {
+        background-color: var(--block-color);
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    .schedule-table td {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 8px;
+        border-bottom: none;
+        font-size: 16px;
+        color: var(--white-color);
+        position: relative;
+        padding-left: 0;
+    }
+
+    .schedule-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 700;
+        color: var(--grey-color);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+        white-space: nowrap;
+    }
+
+    .schedule-table td:first-child {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--white-color);
+        padding-left: 0;
+        margin-bottom: 12px;
+    }
+
+    .schedule-table td:first-child::before {
+        display: none;
+    }
+
+    .schedule-table td:last-child {
+        margin-bottom: 0;
+    }
+
+    .schedule-footer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .schedule-footer .btn-cta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pricing_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing_card {
+        padding: 30px 20px;
+    }
+
+    .pricing_btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main_footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer_left,
+    .footer_center,
+    .footer_right {
+        text-align: center;
+    }
 }
