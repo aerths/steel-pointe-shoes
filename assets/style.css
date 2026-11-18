@@ -352,6 +352,11 @@ hr {
     color: var(--white-color);
 }
 
+.podrobnee:hover p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .arrow_icon {
     width: 20px;
     height: 20px;
