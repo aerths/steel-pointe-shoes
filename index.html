@@ -10,9 +10,6 @@
     <header>
         <section class="head">
             <div class="logo">
-                <div class="logo_img">
-                    <img src="./assets/images/logo.svg" alt="logo">
-                </div>
                 <div class="logo_text">
                     <img src="./assets/images/logo.svg" alt="Steel Pointe" class="logo_text_img">
                 </div>
@@ -161,7 +158,7 @@
                                 Основа техники: экзерсис, прыжки и вращения.<br>
                                 Развиваем точность, осанку и контроль тела.
                             </p>
-                            <div class="podrobnee">
+                            <div class="podrobnee open-modal-btn" data-title="Классический балет" data-description="Основа техники: экзерсис, прыжки и вращения. Развиваем точность, осанку и контроль тела. Занятия включают работу у станка, центральную часть и комбинации на сцене.">
                                 <p>Подробнее</p>
                                 <img class="arrow_icon" src="./assets/icons/↗.svg" alt="">
                             </div>
@@ -177,7 +174,7 @@
                                 Основа техники: экзерсис, прыжки и вращения.<br>
                                 Развиваем точность, осанку и контроль тела.
                             </p>
-                            <div class="podrobnee">
+                            <div class="podrobnee open-modal-btn" data-title="Contemporary" data-description="Современная хореография, которая сочетает элементы классического балета и свободного движения. Работаем над пластикой, эмоциональной выразительностью и сценическим присутствием.">
                                 <p>Подробнее</p>
                                 <img class="arrow_icon" src="./assets/icons/↗.svg" alt="">
                             </div>
@@ -195,7 +192,7 @@
                                 Основа техники: экзерсис, прыжки и вращения.<br>
                                 Развиваем точность, осанку и контроль тела.
                             </p>
-                            <div class="podrobnee">
+                            <div class="podrobnee open-modal-btn" data-title="Хореография" data-description="Мужская хореография: сила прыжка, точность вращения и выразительность каждого жеста. Отрабатываем акробатические элементы, партнерскую работу и сценическую композицию.">
                                 <p>Подробнее</p>
                                 <img class="arrow_icon" src="./assets/icons/↗.svg" alt="">
                             </div>
@@ -211,7 +208,7 @@
                                 Основа техники: экзерсис, прыжки и вращения.<br>
                                 Развиваем точность, осанку и контроль тела.
                             </p>
-                            <div class="podrobnee">
+                            <div class="podrobnee open-modal-btn" data-title="Стретчинг и ОФП" data-description="Комплекс упражнений на растяжку, гибкость и укрепление мышечного корсета. Помогает предотвратить травмы и улучшить качество танцевальной техники.">
                                 <p>Подробнее</p>
                                 <img class="arrow_icon" src="./assets/icons/↗.svg" alt="">
                             </div>
@@ -433,5 +430,13 @@
             <div class="footer_right">Мужская балетная студия</div>
         </footer>
     </main>
+    <div class="modal-overlay" id="danceModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
