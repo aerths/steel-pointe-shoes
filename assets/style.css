@@ -401,3 +401,175 @@ th,td {
     color: #666666;
     font-size: 14px;
 }
+
+/* БЛОК ПРЕПОДАВАТЕЛЕЙ */
+.teachers {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.teachers_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.teacher-card {
+    background-color: var(--block-color); /* Используем твою переменную */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.teacher-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+}
+
+.teacher-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.teacher-card:hover .teacher-image img {
+    filter: grayscale(0%);
+}
+
+.teacher-info {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.teacher-info h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.teacher_category {
+    font-size: 11px;
+    color: var(--grey-color); /* Используем твою переменную */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.teacher_description {
+    font-size: 16px;
+    color: var(--grey-color); /* Используем твою переменную */
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* БЛОК ЦЕН */
+.pricing {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.pricing_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pricing_card {
+    background-color: var(--block-color);
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.pricing_featured {
+    border-top: 3px solid var(--red-color);
+    padding-top: 37px; /* Компенсируем рамку, чтобы текст не съезжал */
+}
+
+.pricing_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: var(--white-color);
+}
+
+.pricing_price {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: var(--white-color);
+    line-height: 1.1;
+}
+
+.pricing_desc {
+    color: var(--grey-color);
+    font-size: 15px;
+    margin: 0 0 25px 0;
+}
+
+.pricing_hr {
+    border: none;
+    border-top: 1px solid var(--hr-color);
+    margin: 0 0 25px 0;
+    width: 100%;
+}
+
+.pricing_list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1; /* Прижимает кнопку к низу */
+}
+
+.pricing_list li {
+    color: var(--grey-color);
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.pricing_btn {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ФУТЕР */
+.main_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--hr-color);
+    padding-top: 35px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.footer_left {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.footer_center {
+    color: var(--grey-color);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer_right {
+    color: var(--grey-color);
+    font-size: 14px;
+}
